@@ -33,18 +33,19 @@ body {
 }
 
 .cowOne {
-    padding: 0;
+    padding: 10px;
+    text-align: right;
 }
 
 .cowTwo {
-    padding: 0;
+    padding: 10px;
 }
 
 .cowThree {
-    padding: 0;
-    height:100%;
+    padding: 10px;
+    text-align: right;
 }
 
 .cowFour {
-    padding: 0;
+    padding: 10px;
 }
