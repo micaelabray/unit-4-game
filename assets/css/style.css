@@ -24,6 +24,10 @@ body {
     text-align: center;
 }
 
+#targetNumber {
+    padding:20px;
+}
+
 .rightPanel {
     background: gray;
     margin-top: 20px;
