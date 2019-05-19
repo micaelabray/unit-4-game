@@ -2,24 +2,20 @@ var targetNumber = Math.floor(Math.random() * 120);
 var counterScore = 0;
 // var numberOptions = Math.floor(Math.random() *12);
 var cowOneValue;
-var cowOneImage;
+var cowOneImage = document.getElementsByClassName(".cowOneImage");
 var cowTwoValue;
-var cowTwoImage;
+var cowTwoImage = document.getElementsByClassName(".cowTwoImage");
 var cowThreeValue;
-var cowThreeImage;
+var cowThreeImage = document.getElementsByClassName(".cowThreeImage");
 var cowFourValue;
-var cowFourImage;
+var cowFourImage = document.getElementsByClassName(".cowFourImage");
 var wins = 0;
 var losses = 0;
 
 $("#targetNumber").text(targetNumber);
-// $("#currentNumber").text(numberOptions);
 
-// for (var i=0; i < numberOptions.length; i++) {
-//     $(".cowOne").attr(numberOptions);
-//     $(".cowTwo").attr(numberOptions);
-//     $(".cowThree").attr(numberOptions);
-//     $(".cowFour").attr(numberOptions);
+// function id(){
+//     var cowOneImage = document.getElementsByClassName(".cowOneImage")
 // }
 
 function reset() {
@@ -34,10 +30,15 @@ function reset() {
 
     // update();
     // counterScore=0;
+
+    cowOneImage.attr("data-cowOneValue", cowOneValue);
+    cowTwoImage.attr("data-cowTwoValue", cowTwoValue);
+    cowThreeImage.attr("data-cowThreeValue", cowThreeValue);
+    cowFourImage.attr("data-cowFourValue", cowFourValue);
 };
 
 
-$(".cowOne").on("click", function(){
+$(".cowOneImage").on("click", function(){
     counterScore += cowOneValue;
     $("#currentNumber").text(counterScore);
     if (counterScore === targetNumber){
@@ -50,7 +51,7 @@ $(".cowOne").on("click", function(){
     }
 });
 
-$(".cowTwo").on("click", function(){
+$(".cowTwoImage").on("click", function(){
     counterScore += cowTwoValue;
     $("#currentNumber").text(counterScore);
     if (counterScore === targetNumber){
@@ -63,7 +64,7 @@ $(".cowTwo").on("click", function(){
     }
 });
 
-$(".cowThree").on("click", function(){
+$(".cowThreeImage").on("click", function(){
     counterScore += cowThreeValue;
     $("#currentNumber").text(counterScore);
     if (counterScore === targetNumber){
@@ -76,7 +77,7 @@ $(".cowThree").on("click", function(){
     }
 });
 
-$(".cowFour").on("click", function(){
+$(".cowFourImage").on("click", function(){
     counterScore += cowFourValue;
     $("#currentNumber").text(counterScore);
     if (counterScore === targetNumber){

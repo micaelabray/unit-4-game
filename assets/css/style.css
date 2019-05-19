@@ -20,7 +20,7 @@ body {
     background: gray;
     /* margin-top: 20px;
     margin-bottom: 20px; */
-    padding:20px;
+    /* padding:20px; */
     text-align: center;
 }
 
@@ -32,24 +32,24 @@ body {
     background: gray;
     /* margin-top: 20px;
     margin-bottom: 20px; */
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
 }
 
-.cowOne {
+.cowOneImage {
     padding: 10px;
     text-align: right;
 }
 
-.cowTwo {
+.cowTwoImage {
     padding: 10px;
 }
 
-.cowThree {
+.cowThreeImage {
     padding: 10px;
     text-align: right;
 }
 
-.cowFour {
+.cowFourImage {
     padding: 10px;
 }
