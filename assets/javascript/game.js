@@ -32,27 +32,65 @@ function reset() {
     cowFourValue=Math.floor(Math.random() *12) + 1;
         console.log(cowFourValue);
 
-    update();
-    counterScore=0;
-}
+    // update();
+    // counterScore=0;
+};
 
 
-// $(".cowOne").on("click", function(){
-//     counter += numberOptions;
-//     $("currentNumber").text(counter += numberOptions);
-// })
+$(".cowOne").on("click", function(){
+    counterScore += cowOneValue;
+    $("#currentNumber").text(counterScore);
+    if (counterScore === targetNumber){
+        wins ++;
+        reset();
+    }
+    else if (counterScore >= targetNumber){
+        losses++;
+        reset();
+    }
+});
 
 $(".cowTwo").on("click", function(){
-    counter += numberOptions;
-    $("currentNumber").text(counter += numberOptions);
-})
+    counterScore += cowTwoValue;
+    $("#currentNumber").text(counterScore);
+    if (counterScore === targetNumber){
+        wins ++;
+        reset();
+    }
+    else if (counterScore >= targetNumber){
+        losses++;
+        reset();
+    }
+});
 
 $(".cowThree").on("click", function(){
-    counter += numberOptions;
-    $("currentNumber").text(counter += numberOptions);
-})
+    counterScore += cowThreeValue;
+    $("#currentNumber").text(counterScore);
+    if (counterScore === targetNumber){
+        wins ++;
+        reset();
+    }
+    else if (counterScore >= targetNumber){
+        losses++;
+        reset();
+    }
+});
 
 $(".cowFour").on("click", function(){
-    counter += numberOptions;
-    $("currentNumber").text(counter += numberOptions);
-})
+    counterScore += cowFourValue;
+    $("#currentNumber").text(counterScore);
+    if (counterScore === targetNumber){
+        wins ++;
+        reset();
+    }
+    else if (counterScore >= targetNumber){
+        losses++;
+        reset();
+    }
+});
+
+function update () {
+    $("#currentNumber").text(counterScore);
+    $("#wins").text(wins);
+    $("#losses").text(losses);
+}
