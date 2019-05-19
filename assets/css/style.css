@@ -18,8 +18,8 @@ body {
 
 .leftPanel {
     background: gray;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
     padding:20px;
     text-align: center;
 }
@@ -30,8 +30,8 @@ body {
 
 .rightPanel {
     background: gray;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
     padding: 20px;
     text-align: center;
 }
