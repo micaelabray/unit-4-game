@@ -14,7 +14,7 @@ $(document).ready(function(){
     var wins = 0;
     var losses = 0;
 
-    $("#targetNumber").text(targetNumber);
+    $("#targetNumber").html(targetNumber);
 
     //Gives randomized value to each image
     cowOneValue=Math.floor(Math.random() *12) + 1;
@@ -37,7 +37,7 @@ $(document).ready(function(){
 
     $(".cowOneImage").on("click", function(){
         counterScore += cowOneValue;
-        $("#currentNumber").text(counterScore);
+        $("#currentNumber").html(counterScore);
         if (counterScore === targetNumber){
             wins ++;
             reset();
@@ -50,7 +50,7 @@ $(document).ready(function(){
 
     $(".cowTwoImage").on("click", function(){
         counterScore += cowTwoValue;
-        $("#currentNumber").text(counterScore);
+        $("#currentNumber").html(counterScore);
         if (counterScore === targetNumber){
             wins ++;
             reset();
@@ -63,7 +63,7 @@ $(document).ready(function(){
 
     $(".cowThreeImage").on("click", function(){
         counterScore += cowThreeValue;
-        $("#currentNumber").text(counterScore);
+        $("#currentNumber").html(counterScore);
         if (counterScore === targetNumber){
             wins ++;
             reset();
@@ -90,9 +90,9 @@ $(document).ready(function(){
     console.log("this is the counterScore " + counterScore);
 
     function update () {
-        $("#currentNumber").text(counterScore);
-        $("#wins").text(wins);
-        $("#losses").text(losses);
+        $("#currentNumber").html(counterScore);
+        $("#wins").html(wins);
+        $("#losses").html(losses);
     }
 
 });
