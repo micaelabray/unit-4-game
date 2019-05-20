@@ -46,11 +46,13 @@ $(document).ready(function(){
         $("#currentNumber").html(counterScore);
         if (counterScore === targetNumber){
             wins ++;
+            counterScore=0;
             $("#wins").html(wins);
             reset();
         }
         else if (counterScore >= targetNumber){
             losses++;
+            counterScore=0;
             $("#losses").html(losses);
             reset();
         }
@@ -61,11 +63,13 @@ $(document).ready(function(){
         $("#currentNumber").html(counterScore);
         if (counterScore === targetNumber){
             wins ++;
+            counterScore=0;
             $("#wins").html(wins);
             reset();
         }
         else if (counterScore >= targetNumber){
             losses++;
+            counterScore=0;
             $("#losses").html(losses);
             reset();
         }
@@ -76,11 +80,13 @@ $(document).ready(function(){
         $("#currentNumber").html(counterScore);
         if (counterScore === targetNumber){
             wins ++;
+            counterScore=0;
             $("#wins").html(wins);
             reset();
         }
         else if (counterScore >= targetNumber){
             losses++;
+            counterScore=0;
             $("#losses").html(losses);
             reset();
         }
@@ -91,11 +97,13 @@ $(document).ready(function(){
         $("#currentNumber").html(counterScore);
         if (counterScore === targetNumber){
             wins ++;
+            counterScore=0;
             $("#wins").html(wins);
             reset();
         }
         else if (counterScore >= targetNumber){
             losses++;
+            counterScore=0;
             $("#losses").html(losses);
             reset();
         }
