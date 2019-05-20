@@ -28,10 +28,17 @@ $(document).ready(function(){
     
         
     function reset() {    
-        cowOneImage.attr("data-cowOneValue", cowOneValue);
-        cowTwoImage.attr("data-cowTwoValue", cowTwoValue);
-        cowThreeImage.attr("data-cowThreeValue", cowThreeValue);
-        cowFourImage.attr("data-cowFourValue", cowFourValue);
+    cowOneValue=Math.floor(Math.random() *12) + 1;
+        console.log(cowOneValue);
+    cowTwoValue=Math.floor(Math.random() *12) + 1;
+        console.log(cowTwoValue);
+    cowThreeValue=Math.floor(Math.random() *12) + 1;
+        console.log(cowThreeValue);
+    cowFourValue=Math.floor(Math.random() *12) + 1;
+        console.log(cowFourValue);
+    counterScore=0;
+    targetNumber = Math.floor(Math.random() * 120);
+    $("#targetNumber").html(targetNumber);
     };
 
 
@@ -82,7 +89,7 @@ $(document).ready(function(){
 
     $(".cowFourImage").on("click", function(){
         counterScore += cowFourValue;
-        $("#currentNumber").text(counterScore);
+        $("#currentNumber").html(counterScore);
         if (counterScore === targetNumber){
             wins ++;
             $("#wins").html(wins);
