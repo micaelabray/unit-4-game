@@ -18,21 +18,13 @@ body {
 
 .leftPanel {
     background: gray;
-    /* margin-top: 20px;
-    margin-bottom: 20px; */
-    /* padding:20px; */
-    text-align: center;
-}
-
-#targetNumber {
     padding:20px;
+    text-align: center;
 }
 
 .rightPanel {
     background: gray;
-    /* margin-top: 20px;
-    margin-bottom: 20px; */
-    /* padding: 20px; */
+    padding: 20px;
     text-align: center;
 }
 
