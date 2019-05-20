@@ -35,7 +35,7 @@ $(document).ready(function(){
         console.log(cowThreeValue);
     cowFourValue=Math.floor(Math.random() *12) + 1;
         console.log(cowFourValue);
-    counterScore=0;
+    counterScore = 0;
     targetNumber = Math.floor(Math.random() * 120);
     $("#targetNumber").html(targetNumber);
     };
@@ -46,14 +46,16 @@ $(document).ready(function(){
         $("#currentNumber").html(counterScore);
         if (counterScore === targetNumber){
             wins ++;
-            counterScore=0;
             $("#wins").html(wins);
+            counterScore=0;
+            $("#currentNumber").html(counterScore);
             reset();
         }
         else if (counterScore >= targetNumber){
             losses++;
-            counterScore=0;
             $("#losses").html(losses);
+            counterScore=0;
+            $("#currentNumber").html(counterScore);
             reset();
         }
     });
@@ -63,14 +65,16 @@ $(document).ready(function(){
         $("#currentNumber").html(counterScore);
         if (counterScore === targetNumber){
             wins ++;
-            counterScore=0;
             $("#wins").html(wins);
+            counterScore=0;
+            $("#currentNumber").html(counterScore);
             reset();
         }
         else if (counterScore >= targetNumber){
             losses++;
-            counterScore=0;
             $("#losses").html(losses);
+            counterScore=0;
+            $("#currentNumber").html(counterScore);
             reset();
         }
     });
@@ -80,14 +84,16 @@ $(document).ready(function(){
         $("#currentNumber").html(counterScore);
         if (counterScore === targetNumber){
             wins ++;
-            counterScore=0;
             $("#wins").html(wins);
+            counterScore=0;
+            $("#currentNumber").html(counterScore);
             reset();
         }
         else if (counterScore >= targetNumber){
             losses++;
-            counterScore=0;
             $("#losses").html(losses);
+            counterScore=0;
+            $("#currentNumber").html(counterScore);
             reset();
         }
     });
@@ -97,14 +103,16 @@ $(document).ready(function(){
         $("#currentNumber").html(counterScore);
         if (counterScore === targetNumber){
             wins ++;
-            counterScore=0;
             $("#wins").html(wins);
+            counterScore=0;
+            $("#currentNumber").html(counterScore);
             reset();
         }
         else if (counterScore >= targetNumber){
             losses++;
-            counterScore=0;
             $("#losses").html(losses);
+            counterScore=0;
+            $("#currentNumber").html(counterScore);
             reset();
         }
     });
