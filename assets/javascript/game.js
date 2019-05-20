@@ -2,7 +2,6 @@ $(document).ready(function(){
 
     var targetNumber = Math.floor(Math.random() * 120);
     var counterScore = 0;
-    var numberOptions = Math.floor(Math.random() *12);
     var cowOneValue;
     var cowOneImage = $(".cowOneImage");
     var cowTwoValue;
