@@ -1,2 +1,4 @@
 # unit-4-game
-Week 4 Homework
+CowCollectors: Week 4 Homework
+
+Live Link: https://micaelabray.github.io/unit-4-game/
